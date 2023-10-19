@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "emailProject_backend": {
+      "main": "src/emailProject_backend/main.mo",
+      "type": "motoko"
+    },
+    "emailProject_frontend": {
+      "dependencies": [
+        "emailProject_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/emailProject_frontend/src/index.html"
+      },
+      "source": [
+        "src/emailProject_frontend/assets",
+        "dist/emailProject_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
