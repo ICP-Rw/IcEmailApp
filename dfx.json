@@ -1,13 +1,11 @@
 {
   "canisters": {
-    "emailProject_backend": {
+    "backend": {
       "main": "src/emailProject_backend/main.mo",
       "type": "motoko"
     },
-    "emailProject_frontend": {
-      "dependencies": [
-        "emailProject_backend"
-      ],
+    "frontend": {
+      "dependencies": ["backend"],
       "frontend": {
         "entrypoint": "src/emailProject_frontend/src/index.html"
       },

@@ -10,15 +10,48 @@
   </head>
   <body>
     <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <div class="imgDiv">
+        <img src="logo2.svg" alt="DFINITY logo" />
+      </div>
+
+      <div class="formContainer">
+        <div class="formDiv">
+          <div class="oneDiv">
+            <label for="name">Enter recipient name &nbsp;</label>
+            <input
+              style="width: 60%; border-radius: 10px; border: 2px solid salmon"
+              id="name"
+              alt="Name"
+              type="text"
+              required
+            />
+          </div>
+          <div class="oneDiv">
+            <label for="name">Enter recipient email &nbsp;</label>
+            <input
+              id="email"
+              style="width: 60%; border-radius: 10px; border: 2px solid salmon"
+              alt="Name"
+              type="email"
+              required
+            />
+          </div>
+          <div class="btnDiv">
+            <button class="btn" id="btn" type="submit">Send Email</button>
+          </div>
+          <div
+            style="
+              margin-top: 20px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span id="greeting"></span>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
