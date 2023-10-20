@@ -17,16 +17,6 @@
       <div class="formContainer">
         <div class="formDiv">
           <div class="oneDiv">
-            <label for="name">Enter recipient name &nbsp;</label>
-            <input
-              style="width: 60%; border-radius: 10px; border: 2px solid salmon"
-              id="name"
-              alt="Name"
-              type="text"
-              required
-            />
-          </div>
-          <div class="oneDiv">
             <label for="name">Enter recipient email &nbsp;</label>
             <input
               id="email"
@@ -35,6 +25,24 @@
               type="email"
               required
             />
+          </div>
+          <div class="oneDiv">
+            <label for="name">Enter message &nbsp;</label>
+            <textarea
+              name="name"
+              id="name"
+              cols="30"
+              rows="10"
+              style="width: 60%; border-radius: 10px; border: 2px solid salmon"
+              required
+            ></textarea>
+            <!-- <input
+              style="width: 60%; border-radius: 10px; border: 2px solid salmon"
+              id="name"
+              alt="Name"
+              type="text"
+              required
+            /> -->
           </div>
           <div class="btnDiv">
             <button class="btn" id="btn" type="submit">Send Email</button>
