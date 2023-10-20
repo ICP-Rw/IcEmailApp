@@ -17,7 +17,7 @@ document.getElementById("btn").addEventListener("click", async (e) => {
   button.removeAttribute("disabled");
 
   document.getElementById("greeting").innerText =
-    "Email sent to " + name + " : " + greeting;
+    "Email sent to " + userEmail + " : " + greeting;
 
   return false;
 });
